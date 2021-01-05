@@ -9,8 +9,25 @@
 
     <?php
 
-        
+        $x = 1;
 
+        echo "<h2>Do While</h2>";
+
+        do {
+            echo $x . "<br>";
+            $x++;
+        } while ($x <= 10);
+
+        echo "<hr>";
+
+        $y = 1;
+
+        echo "<h2>While</h2>";
+
+        while($y <= 10) {
+            echo $y ."<br>";
+            $y++;
+        }
     ?>
     
 </body>
