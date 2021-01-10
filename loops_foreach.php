@@ -14,9 +14,8 @@
         ['titulo' => 'Titulo da noticia 2', 'conteudo' => 'Conteudo da noticia 2'],
         ['titulo' => 'Titulo da noticia 3', 'conteudo' => 'Conteudo da noticia 3'],
         ['titulo' => 'Titulo da noticia 4', 'conteudo' => 'Conteudo da noticia 4'],
-        ['titulo' => 'Titulo da noticia 5', 'conteudo' => 'Conteudo da noticia 5'],
-        ['titulo' => 'Titulo da noticia 6', 'conteudo' => 'Conteudo da noticia 6']
-    );
+        ['titulo' => 'Titulo da noticia 5', 'conteudo' => 'Conteudo da noticia 5']
+        );
 
     echo'<pre>';
     print_r($registros);
@@ -26,7 +25,8 @@
         echo "<h2>".$reg_noticias['titulo']."</h2>";
         echo "<p>".$reg_noticias['conteudo']."</p>";
         echo '<hr>';
-    }
+
+        }
 
     ?>
     
