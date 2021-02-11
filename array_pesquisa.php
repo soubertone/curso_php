@@ -13,12 +13,27 @@
     //array_search() -> 
 
     $lista_frutas = array('Banana', 'Maçã', 'Uva', 'Morango');
+    $lista_frutas2 = array('Manga', 'Pessego', 'Pera', 'Melancia');
 
     echo '<pre>';
     print_r($lista_frutas);
     echo '</pre>';
 
-    echo array_search('Banana', $lista_frutas); //Retorna o índice que está armazenado ou NULL
+    echo '<pre>';
+    print_r($lista_frutas2);
+    echo '</pre>';
+
+    $array1 = array_search('Banana', $lista_frutas); //Retorna o índice que está armazenado ou NULL
+
+    $array2 = array_search('Pera', $lista_frutas2); //Retorna o índice que está armazenado ou NULL
+
+    if($array1 == $array2){
+        echo 'Os índices do array são iguais. <br>';
+        echo $array1 . ' e ' . $array2;
+    } else {
+        echo 'Os índices do array são diferentes. <br>';
+        echo $array1 . ' e ' . $array2;
+    }
 
     # in_array ('Banana', $lista_frutas); //Pesquisa e retorna TRUE ou FALSE
 
